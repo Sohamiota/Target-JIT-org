@@ -1,99 +1,98 @@
-# TARGET JIT: Inventory Management System with AI/ML
+📦 **TargetJit – Inventory Intelligence Simplified**
 
-TARGET JIT is a comprehensive software solution designed to efficiently manage inventory comprising over 2000 Stock Keeping Units (SKUs). The project leverages machine learning techniques and a robust full-stack architecture to provide a data-driven approach to enhance inventory management, minimize waste, and improve operational efficiency.
+TargetJit is a smart web-based tool that helps dealerships efficiently **categorize**, **track**, and **analyze thousands of SKUs** (Stock Keeping Units). It transforms manual inventory headaches into simple, insightful dashboards.
 
-## Features
+Live Demo: [https://targetjit.vercel.app](https://targetjit.vercel.app)
 
-1. **SKU Categorization**:
-   - Automatically classifies items into fast-moving, slow-moving, and obsolete categories
-   - Helps prioritize restocking decisions
+---
 
-2. **Inventory Forecasting**:
-   - Predicts demand trends for different SKUs using historical sales data
-   - Ensures optimal stock levels and prevents overstocking or stockouts
+**What Does It Do?**
 
-3. **Just-In-Time Inventory Management**:
-   - Supports JIT principles to align stock availability with real-time demand
-   - Minimizes holding costs and maximizes inventory turnover
+TargetJit was built to solve a real-world problem faced by L\&T dealerships — managing more than 2000 SKUs spread across different categories. This platform provides:
 
-4. **Analytics Dashboard**:
-   - Provides an interactive dashboard for visualizing inventory performance metrics
-   - Key metrics include stock turnover ratio, SKU classification, and demand predictions
+• Easy classification of **Fast-Moving** vs. **Slow-Moving Items**
+• Real-time dashboard for sales trends and inventory status
+• Intelligent tracking for efficient stock rotation and replenishment
+• Actionable insights that support smarter purchase decisions
 
-5. **Reorder Alerts**:
-   - Notifies users when stock levels fall below the reorder threshold
-   - Reduces the risk of stockouts
+---
 
-6. **Custom Reporting**:
-   - Generates detailed reports on inventory trends, sales performance, and restocking schedules
-   - Enables data-driven decision-making
+**Who Is It For?**
 
-7. **User Management**:
-   - Multi-user functionality with role-based access control
-   - Ensures data security and streamlined collaboration
+Dealers, distributors, and warehouse managers who want a **quick overview of stock performance** and **data-driven categorization** without spending hours in Excel sheets.
 
-## Machine Learning Models
+---
 
-The project uses various ML models for the following tasks:
+**Tech Stack Used**
 
-1. **Demand Forecasting**:
-   - ARIMA (AutoRegressive Integrated Moving Average)
-   - LSTM (Long Short-Term Memory) neural networks
+• Frontend Framework: **Next.js 14** with App Router
+• Language: **TypeScript**
+• UI: **Tailwind CSS** for responsive design
+• Charts and Graphs: **Recharts** (for visualizing inventory behavior)
+• Hosting: **Vercel**
+• State Management: Local state and hooks
+• Data: JSON/Mock Data (for current demo; scalable to backend APIs)
 
-2. **SKU Categorization**:
-   - K-Means Clustering
+---
 
-3. **Anomaly Detection**:
-   - Isolation Forest
+**Folder Structure Overview**
 
-4. **Optimization**:
-   - Linear Programming (LP)
+targetjit
+│
+├── app → Contains main pages and routing logic
+│   └── layout.tsx → Sets global layout
+│   └── dashboard → Core interface showing charts and stats
+│
+├── components → Modular UI components like cards, graphs, filters
+├── lib → Helper utilities for data analysis and classification
+├── public → Static files (icons, images)
+├── styles → Custom Tailwind or global styles
+├── .env → (for future API integrations)
+├── tailwind.config.ts → Tailwind setup
+└── tsconfig.json → TypeScript configurations
 
-## Installation
+---
 
-1. Clone the repository:
-   \`\`\`
-   git clone https://github.com/yourusername/target-jit.git
-   cd target-jit
-   \`\`\`
+**How to Run Locally**
 
-2. Install the required dependencies:
-   \`\`\`
-   pip install -r requirements.txt
-   \`\`\`
+Step 1: Clone the project
+› git clone [https://github.com/Sohamiota/targetjit.git](https://github.com/Sohamiota/targetjit.git)
+› cd targetjit
 
-3. Run the application:
-   \`\`\`
-   streamlit run app.py
-   \`\`\`
+Step 2: Install dependencies
+› pnpm install
 
-## Usage
+Step 3: Start the development server
+› pnpm dev
 
-1. **Dashboard**: View key inventory metrics and performance indicators
-2. **SKU Categorization**: Classify inventory items based on sales velocity and turnover rate
-3. **Demand Forecasting**: Predict future demand for inventory items
-4. **Anomaly Detection**: Identify irregularities in inventory data
-5. **Inventory Optimization**: Optimize inventory levels to minimize costs
+(Optional) You can later integrate APIs and real-time databases for production-level tracking.
 
-## Project Structure
+---
 
-\`\`\`
-target-jit/
-├── app.py                  # Main Streamlit application
-├── ml_models/              # Machine learning model implementations
-│   ├── sku_categorization.py
-│   ├── demand_forecasting.py
-│   ├── anomaly_detection.py
-│   └── inventory_optimization.py
-├── models/                 # Saved model files (created at runtime)
-├── requirements.txt        # Project dependencies
-└── README.md               # Project documentation
-\`\`\`
+**Key Features**
 
-## Contributing
+• Categorization of over 2000+ SKUs
+• Visual separation of slow- vs. fast-moving items
+• Dynamic graphs showing trends and sales activity
+• Scalable UI for real-time data integrations
+• Clean and accessible dashboard for non-tech users
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+---
 
-## License
+**Planned Improvements**
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+• Integration with real-time inventory databases
+• Downloadable reports (PDF/Excel)
+• Advanced filters for categories, price, stock levels
+• User authentication and multi-role support
+
+---
+
+**Author**
+
+Developed by Sohamiota
+GitHub: [https://github.com/Sohamiota](https://github.com/Sohamiota)
+
+---
+
+Let me know if you'd like this exported as a `.docx`, `.pdf`, or combined with your other project READMEs in one file.
